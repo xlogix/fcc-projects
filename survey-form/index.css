@@ -1,0 +1,73 @@
+#main, #title h1, #title h2, #img-div, #tribute-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#main {
+  margin-left: 5%;
+  margin-right: 5%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  background: linear-gradient(to bottom, #e9ecf0, #d1d8e0);
+}
+
+#title h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+#title h2 {
+  font-family: 'Acme', sans-serif;
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+}
+
+#img-div {
+  background-color: white;
+  margin: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+#image {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: auto;
+}
+
+#img-caption {
+  font-family: sans-serif;
+  font-size: 18px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
+  text-align: center;
+}
+
+#tribute-info {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin-left: 15%;
+  margin-right: 15%;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 4%;
+}
+
+#tribute-info h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+#tribute-info ul li p, p {
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#tribute-link:hover {
+  background-color: rgba(68, 66, 66, 0.986);
+  color: white;
+}

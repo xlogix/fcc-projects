@@ -1,0 +1,274 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>PHP Documentation</header>
+        <ul>
+            <a href="#Introduction" rel="internal" class="nav-link">
+                <li>Introduction</li>
+            </a>
+            <hr>
+            <a href="#What_is_PHP" rel="internal" class="nav-link">
+                <li>What is PHP</li>
+            </a>
+            <hr>
+            <a href="#Syntax" rel="internal" class="nav-link">
+                <li>Syntax</li>
+            </a>
+            <hr>
+            <a href="#Hello_World" rel="internal" class="nav-link">
+                <li>Hello World</li>
+            </a>
+            <hr>
+            <a href="#Variables" rel="internal" class="nav-link">
+                <li>Variables</li>
+            </a>
+            <hr>
+            <a href="#If_Statements" rel="internal" class="nav-link">
+                <li>If Statements</li>
+            </a>
+            <hr>
+            <a href="#if_else_Statements" rel="internal" class="nav-link">
+                <li>if else Statements</li>
+            </a>
+            <hr>
+            <a href="#else_if_Statements" rel="internal" class="nav-link">
+                <li>else if Statements</li>
+            </a>
+            <hr>
+            <a href="#switch_Statements" rel="internal" class="nav-link">
+                <li>switch Statements</li>
+            </a>
+            <hr>
+            <a href="#while_loop" rel="internal" class="nav-link">
+                <li>while loop</li>
+            </a>
+            <hr>
+            <a href="#Do_while_loop" rel="internal" class="nav-link">
+                <li>Do while loop</li>
+            </a>
+            <hr>
+            <a href="#for_loop" rel="internal" class="nav-link">
+                <li>for loop</li>
+            </a>
+            <hr>
+            <a href="#foreach_loop" rel="internal" class="nav-link">
+                <li>foreach loop</li>
+            </a>
+            <hr>
+            <a href="#Functions" rel="internal" class="nav-link">
+                <li>Functions</li>
+            </a>
+            <hr>
+            <a href="#Arrays" rel="internal" class="nav-link">
+                <li>Arrays</li>
+            </a>
+            <hr>
+        </ul>
+    </nav>
+    <main id="main-doc">
+
+        <section id="Introduction" class="main-section">
+            <header>Introduction</header>
+            <p>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages. PHP
+                is a widely-used, free, and efficient alternative to competitors such as Microsoft's ASP.</p>
+        </section>
+        <hr>
+
+        <section id="What_is_PHP" class="main-section">
+            <header>What is PHP</header>
+            <ul>
+                <li>PHP is an acronym for "PHP: Hypertext codeprocessor".</li>
+                <li>PHP is a widely-used, open source scripting language.</li>
+                <li>PHP files have extension ".php"</li>
+                <li>PHP can send and receive cookies. Add, delete, modify data in your database. PHP can also be used to
+                    control user-access and encrypt data.</li>
+            </ul>
+        </section>
+        <hr>
+
+        <section id="Syntax" class="main-section">
+            <header>Syntax</header>
+            <p>A PHP script can be placed anywhere in the document. A PHP script starts with <code>&lt;?php</code> and
+                ends with <code>?></code></p>
+            <p>A comment in PHP code is a line that is not read/executed as part of the program. Its only purpose is to
+                be read by someone who is looking at the code.</p>
+            <code class="code-snippet">
+        // This is a single-line comment.
+
+        # This is also a single-line comment.
+
+        /*  This is a multiple-lines comment block
+            that spans over multiple
+            lines.
+        */
+      </code>
+            <p>In PHP, all keywords (e.g. if, else, while, echo, etc.), classes, functions, and user-defined functions
+                are NOT case-sensitive. However; all variable names are case-sensitive.</p>
+        </section>
+        <hr>
+
+        <section id="Hello_World" class="main-section">
+            <header>Hello World</header>
+            <code>echo "Hello World!";</code>
+            <p><strong>Note: </strong>PHP statements end with a semicolon (;).</p>
+        </section>
+        <hr>
+
+        <section id="Variables" class="main-section">
+            <header>Variables</header>
+            <p>In PHP, a variable starts with the <code>$</code> sign, followed by the name of the variable</p>
+            <code>$txt = "Hello world!";</code><br>
+            <code>$x = 5;</code><br>
+            <code>$y = 10.5;</code><br>
+            <ul>
+                <li>A variable starts with the $ sign, followed by the name of the variable</li>
+                <li>A variable name must start with a letter or the underscore character</li>
+                <li>A variable name cannot start with a number</li>
+                <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )</li>
+                <li>Variable names are case-sensitive ($age and $AGE are two different variables)</li>
+            </ul>
+        </section>
+        <hr>
+
+        <section id="If_Statements" class="main-section">
+            <header>If Statements</header>
+            <code class="code-snippet">
+        if (condition) {
+          code to be executed if condition is true;
+        }
+      </code>
+        </section>
+        <hr>
+
+        <section id="if_else_Statements" class="main-section">
+            <header>if else Statements</header>
+            <code class="code-snippet">
+        if (condition) {
+          code to be executed if condition is true;
+        } else {
+          code to be executed if condition is false;
+        }
+      </code>
+        </section>
+        <hr>
+
+        <section id="else_if_Statements" class="main-section">
+            <header>else if Statements</header>
+            <code class="code-snippet">
+        if (condition) {
+          code to be executed if this condition is true;
+        } elseif (condition) {
+          code to be executed if this condition is true;
+        } else {
+          code to be executed if all conditions are false;
+        }
+      </code>
+        </section>
+        <hr>
+
+        <section id="switch_Statements" class="main-section">
+            <header>switch Statements</header>
+            <code class="code-snippet">
+        switch (n) {
+          case label1:  code to be executed if n=label1;
+                        break;
+          case label2:  code to be executed if n=label2;
+                        break;
+              ...
+          default:  code to be executed if n is different from all labels;
+        }
+      </code>
+            <p>
+                This is how it works: First we have a single excodession n (most often a variable), that is evaluated
+                once. The value of the excodession is then compared with the values for each case in the structure. If
+                there is a match, the block of code associated with that case is executed. Use <code>break</code> to
+                codevent the code from running into the next case automatically. The <code>default</code> statement is
+                used if no match is found.
+            </p>
+        </section>
+        <hr>
+
+        <section id="while_loop" class="main-section">
+            <header>while loop</header>
+            <p>The <code>while</code> loop executes a block of code as long as the specified condition is true.</p>
+            <code class="code-snippet">
+        while (condition is true) {
+          code to be executed;
+        }
+      </code>
+        </section>
+        <hr>
+
+        <section id="Do_while_loop" class="main-section">
+            <header>Do while loop</header>
+            <p>The <code>do while</code> loop will always execute the block of code once, it will then check the
+                condition, and repeat the loop while the specified condition is true.</p>
+            <code class="code-snippet">
+        do {
+          code to be executed;
+        } while (condition is true);
+      </code>
+        </section>
+        <hr>
+
+        <section id="for_loop" class="main-section">
+            <header>for loop</header>
+            <p>The <code>for</code> loop is used when you know in advance how many times the script should run.</p>
+            <code class="code-snippet">
+        for (init counter; test counter; increment counter) {
+          code to be executed;
+        }
+      </code>
+        </section>
+        <hr>
+
+        <section id="foreach_loop" class="main-section">
+            <header>foreach loop</header>
+            <p>The <code>foreach</code> loop works only on arrays, and is used to loop through each key/value pair in an
+                array.</p>
+            <code class="code-snippet">
+        foreach ($array as $value) {
+            code to be executed;
+        }
+      </code>
+        </section>
+        <hr>
+
+        <section id="Functions" class="main-section">
+            <header>Functions</header>
+            <p>Besides the built-in PHP functions, we can create our own functions. A function is a block of statements
+                that can be used repeatedly in a program. A function will not execute immediately when a page loads. A
+                function will be executed by a call to the function.</p>
+            <code class="code-snippet">
+          function functionName() {
+              code to be executed;
+          }
+        </code>
+        </section>
+        <hr>
+
+        <section id="Arrays" class="main-section">
+            <header>Arrays</header>
+            <p>An array is a special variable, which can hold more than one value at a time.</p>
+            <p>In PHP, the <code>array();</code> function is used to create an array</p>
+            <code>$cars = array("Volvo", "BMW", "Toyota");</code>
+            <p>The <code>count();</code> function is used to return the length (the number of elements) of an array</p>
+        </section>
+        <hr>
+
+    </main>
+</body>
+
+</html>

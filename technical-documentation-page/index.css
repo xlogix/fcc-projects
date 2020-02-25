@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 300px;
+  height: 90%;
+  border-right: solid;
+  border-color: rgb(0, 0, 0);
+  margin-top: 20px;
+}
+
+#navbar ul {
+  list-style: none;
+  height: 75%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-size: 20px;
+  color: rgb(63, 59, 59);
+  position: relative;
+}
+
+#navbar header {
+  text-align: center;
+  font-size: 35px;
+  line-height: 1;
+  margin: 20px;
+  font-weight: 100;
+}
+
+a, li {
+  text-decoration: none;
+  color: rgb(65, 59, 59);
+}
+
+li:hover {
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  padding: 0px 10px 0px 10px;
+  transition: 0.7s;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 300px;
+  padding: 30px;
+}
+
+#main-doc header {
+  font-size: 32px;
+}
+
+#main-doc section {
+  font-size: 18px;
+  margin: 10px;
+}
+
+code {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.code-snippet {
+  display: block;
+  text-align: left;
+  white-space: pre-wrap;
+  position: relative;
+  line-height: 1.5;
+  background-color: rgb(219, 212, 212);
+  color: black;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.bottom {
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 10%;
+  text-align: center;
+  font-weight: 600;
+  color: black;
+  padding-top: 1%;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 815px) {
+  #navbar ul {
+    border: 1px solid;
+    height: 300px;
+  }
+  #navbar {
+    position: absolute;
+    width: 90%;
+    max-height: 300px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+    top: 0;
+    left: 20px;
+  }
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 310px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+  .code-snippet {
+    margin-left: -20px;
+    width: 100%;
+    padding: 0px;
+    padding-right: 45px;
+    min-width: 233px;
+  }
+}
